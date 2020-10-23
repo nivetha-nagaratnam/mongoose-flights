@@ -1,6 +1,9 @@
 <%- include('../partials/header.ejs') %>
 
-<form action="/flights" method="POST">
+<br>
+<br>
+<br>
+<form #id = new-form action="/flights" method="POST">
   <label>Airline:
     <select name="airline">
       <option value=""></option>
@@ -24,8 +27,8 @@
   </label><br>
   <label>Departs:
     <input type="datetime-local" name="departs">
-  </label><br>
-  <input type="submit" value="Add Flight">
+  </label><br><br>
+  <input class="btn btn-warning" type="submit" value="Add Flight">
 </form>
 
 <%- include('../partials/footer.ejs') %>

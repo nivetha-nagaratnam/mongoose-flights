@@ -1,7 +1,7 @@
 
 <%- include('../partials/header.ejs') %>
 
-  <table id = 'list'>
+  <table class = "table table-hover" id = 'list'>
       <thead>
           <tr>
               <th>Airline</th>
@@ -17,7 +17,7 @@
                   <td><%= f.airport %></td>
                   <td><%= f.flightNo %></td>
                   <td><%= f.departs %></td>
-                  <td><a href="/flights/<%= f._id %>">DETAILS</a></td>
+                  <td><a class="btn btn-warning" href="/flights/<%= f._id %>">DETAILS</a></td>
               </tr>
           <% }); %>
       </tbody>

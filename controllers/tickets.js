@@ -2,7 +2,6 @@ const Ticket = require('../models/ticket');
 // add the Movie model
 const Flight = require('../models/flight');
 	
-  
 function create(req, res) {
     req.body.flight = req.params.id;
     Ticket.create(req.body, function (err) {
